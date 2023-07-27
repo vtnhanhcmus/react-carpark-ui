@@ -1,9 +1,17 @@
+import React from "react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import CarParkListing from "./containers/CarParkListing";
 import './App.css';
 
-function App() {
+function App(){
   return (
     <div className="App">
-      <h1>Hello Carpark</h1>
+      <Router>
+          <Routes>
+            <Route path="/" element={<CarParkListing/>}/>
+            
+          </Routes>
+      </Router>
     </div>
   );
 }
