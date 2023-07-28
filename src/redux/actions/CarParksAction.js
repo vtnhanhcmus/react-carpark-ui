@@ -6,3 +6,16 @@ export const setCarParks = (carparks) => {
         payload: carparks,
     }
 };
+
+export const seletedCarPark = (carpark) => {
+    return {
+        type: ActionTypes.SELECTED_CARPARK,
+        payload: carpark,
+    }
+};
+
+export const removedSeletedCarPark = () => {
+    return {
+        type: ActionTypes.REMOVE_SELECTED_CARPARK,
+    }
+};
